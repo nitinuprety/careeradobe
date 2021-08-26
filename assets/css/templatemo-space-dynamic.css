@@ -196,6 +196,31 @@ body {
   color: #fe3f40;
 }
 
+.discover-more-button a {
+  display: inline-block;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  color: #03a4ed;
+  text-transform: capitalize;
+  padding: 10px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: 2px solid #03a4ed;
+}
+
+.discover-more-button a:hover {
+  display: inline-block;
+  background-color: #03a4ed;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 10px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+}
+
 .main-blue-button a {
   display: inline-block;
   background-color: #03a4ed;
@@ -835,7 +860,7 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 226px 0px 120px 0px;
+  padding: 120px 0px 120px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -867,8 +892,7 @@ Banner Style
 }
 
 .main-banner .left-content h6 {
-  text-transform: uppercase;
-  font-size: 18px;
+  font-size: 22px;
   color: #fe3f40;
   margin-bottom: 15px;
 }
