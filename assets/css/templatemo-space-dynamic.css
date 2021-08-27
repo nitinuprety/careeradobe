@@ -1510,7 +1510,9 @@ responsive
     text-align: left;
   }
   .our-services {
-    margin-top: 200px;
+    margin-top: 300px;
+    padding-top: 50px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
   }
   .our-services .left-image {
     margin-right: 0px;
