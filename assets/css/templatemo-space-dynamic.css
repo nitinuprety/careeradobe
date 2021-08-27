@@ -125,7 +125,7 @@ ul {
 }
 
 p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 30px;
   color: #2a2a2a;
 }
@@ -860,7 +860,7 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 120px 0px 120px 0px;
+  padding: 120px 0px 0px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -1015,7 +1015,7 @@ Services Style
 */
 
 .our-services {
-  margin-top: 0px;
+  margin-top: 150px;
   padding-top: 120px;
 }
 
@@ -1111,7 +1111,7 @@ Portfolio
 .our-portfolio .section-heading h2 {
   text-align: center;
   margin: 0px 90px 0px 90px;
-  margin-bottom: 120px;
+  /*margin-bottom: 120px;*/
   position: relative;
   z-index: 1;
 }
@@ -1120,13 +1120,7 @@ Portfolio
   position: relative;
 }
 
-.our-portfolio .item:hover .hidden-content {
-  top: -100px;
-  opacity: 1;
-  visibility: visible;
-}
-
-.our-portfolio .item:hover .showed-content {
+.our-portfolio .item .showed-content {
   top: 90px;
 }
 
@@ -1136,9 +1130,8 @@ Portfolio
   padding: 30px;
   border-radius: 20px;
   text-align: center;
-  opacity: 0;
-  top: 0;
-  visibility: hidden;
+  opacity: 1;
+  top: -100px;
   position: absolute;
   z-index: 2;
   transition: all 0.5s;
@@ -1196,6 +1189,7 @@ Blog
   position: relative;
   margin-top: 80px;
   padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .our-blog .section-heading h2 {
@@ -1313,6 +1307,7 @@ contact
 
 .contact-us {
   padding: 160px 0px;
+  margin-top: 80px;
   background-image: url(../images/contact-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1338,6 +1333,7 @@ contact
   font-size: 20px;
   font-weight: 700;
   color: #fff;
+  padding: 2px;
 }
 
 .phone-info h4 span i {
@@ -1346,12 +1342,7 @@ contact
   display: inline-block;
   text-align: center;
   line-height: 46px;
-  background-color: #fff;
-  border-radius: 50%;
-  color: #ff3b2c;
   font-size: 22px;
-  margin-left: 30px;
-  margin-right: 15px;
 }
 
 .phone-info h4 span a {
@@ -1444,9 +1435,13 @@ Footer Style
 --------------------------------------------- 
 */
 
+footer {
+  margin-top: 40px;
+}
+
 footer p {
   text-align: center;
-  margin: 30px 0px 45px 0px;
+  margin: 60px 0px 45px 0px;
 }
 
 footer p a {
@@ -1510,9 +1505,8 @@ responsive
     text-align: left;
   }
   .our-services {
-    margin-top: 300px;
+    margin-top: 120px;
     padding-top: 50px;
-    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
   }
   .our-services .left-image {
     margin-right: 0px;
@@ -1523,8 +1517,11 @@ responsive
     margin-right: 0px;
     text-align: center;
   }
+  #employers {
+    margin-top: 180px;
+  }
   .our-portfolio .section-heading h2 {
-    margin: 0px 0px 80px 0px;
+    margin: 0;
   }
   .our-portfolio .item {
     margin-bottom: 15px;
@@ -1567,7 +1564,7 @@ responsive
     display: none;
   }
   footer p {
-    margin: 15px 0px 30px 0px;
+    margin: 60px 0px 30px 0px;
   }
 }
 
@@ -1600,4 +1597,119 @@ responsive
   .phone-info h4 span i {
     margin-left: 0px;
   }
+}
+
+/* 
+---------------------------------------------
+My Style
+--------------------------------------------- 
+*/
+
+.solution-head {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+}
+.solution-head em {
+  font-style: normal;
+}
+.m-0 {
+  margin: 0;
+}
+.mb-30 {
+  margin-bottom: 30px!important;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mb-120 {
+  margin-bottom: 120px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.p-20{
+  padding: 20px;
+}
+.text-justify {
+  text-align: justify;
+}
+.display-inline {
+  display: inline;
+}
+.fw-600 {
+  font-weight: 600!important;
+}
+
+.contact-alt {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .solution-head {
+    color: #2a2a2a;
+  }
+  .solution-head em {
+    font-style: normal;
+    color: #03a4ed;
+  }
+  .contact-alt {
+    display: block;
+  }
+}
+
+
+.social-menu ul{
+    position: absolute;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fa{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fa:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #000;
 }
