@@ -56,9 +56,9 @@
               <li class="scroll-to-section"><a href="#solutions">Our Solutions</a></li> 
               <li class="scroll-to-section"><a href="#employers">Employers</a></li>
               <li class="scroll-to-section"><a href="#candidates">Candidates</a></li>
-              <li class="scroll-to-section contact-alt"><a href="#contact">Contact Us</a></li>
+              <li class="scroll-to-section contact-alt"><a href="#contact-us">Contact Us</a></li>
               <!-- <li class="scroll-to-section"><a href="#blog">Blog</a></li> --> 
-              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Now</a></div></li> 
+              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact-us">Contact Now</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -79,7 +79,7 @@
             <div class="col-lg-6 align-self-center">
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <h6>Welcome to CareerAdobe</h6>
-                <h2>Building 360&deg; <em>Organisation</em> &amp; <span>career</span></h2>
+                <h2>Building 360&deg; <em>Career</em> &amp; <span>Organisation</span></h2>
 		            <div class="discover-more-button mt-20"><a href="#about">Discover More <i class="fa fa-arrow-down"></i></a></div>
               </div>
             </div>
@@ -249,7 +249,7 @@
             <h2 class="m-0 fw-600"><span>The world of work is changing fast.</span></h2>
             <p class="mb-30">We’ll make sure you don’t have to face it alone.
             Don’t hesitate. Get in touch with us, we’ll tell you just how we can help.</p>
-            <div class="discover-more-button text-center mt-20"><a href="#contact">Contact Us Now <i class="fa fa-arrow-down"></i></a></div>
+            <div class="discover-more-button text-center mt-20"><a href="#contact-us">Contact Us Now <i class="fa fa-arrow-down"></i></a></div>
           </div>
           <!-- <div class="row">
             <div class="col-lg-12">
@@ -282,7 +282,7 @@
     </div>
   </div>
 
-  <div id="contact" class="contact-us section">
+  <div id="contact-us" class="contact-us section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
@@ -290,44 +290,40 @@
             <h2>Get in touch with us now.</h2>
             <p>We are here to help and answer any question you might have. We look forward to hearing from you.</p>
             <div class="phone-info">
-              <h4>Fill out the form Or</h4>
+              <h4>CareerAdobe</h4>
               <h4><span><i class="fa fa-envelope"></i></span><p class="display-inline fw-600">Mail Us:</p><span><a href="mailto:info@careeradobe.com"> info@careeradobe.com</a></span></h4>
               <h4><span><i class="fa fa-phone"></i></span><p class="display-inline fw-600">Call Us On:</p><span><a href="tel:+919821976858"> +91-9821976858</a></span></h4>
               <h4><span><i class="fa fa-map-marker"></i></span><p class="display-inline fw-600">Company Location:</p><span><a target="blank" href="https://www.google.com/maps/place/Patna,+Bihar/@25.6079707,85.0029573,11z/data=!3m1!4b1!4m5!3m4!1s0x39f29937c52d4f05:0x831a0e05f607b270!8m2!3d25.5940947!4d85.1375645"> Patna, Bihar</a></span></h4>
+              <h4><span><i class="fa fa-file"></i></span><p class="display-inline fw-600">Company GSTIN:</p><span><a href=""> 10FCBPS0457M1ZK</a></span></h4>
             </div>
           </div>
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
+          <form id="contact">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <fieldset>
                   <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
                 </fieldset>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <fieldset>
-                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                  <input name="category" type="name" id="category" placeholder="Inquiry for" required></input>  
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <input name="category" type="name" id="category" placeholder="Jobseeker or Request talent?" required=""></input>  
+                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required></textarea>  
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                  <button onclick="sendMail()" class="main-button">Send Message</button>
                 </fieldset>
               </div>
             </div>
@@ -346,9 +342,9 @@
         <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
           <div class="social-menu">
             <ul>
-                <li><a href="https://github.com/career_adobe" target="blank"><i class="fa fa-facebook"></i></i></a></li>
+                <li><a href="https://www.facebook.com/CareerAdobe-106184648474593" target="blank"><i class="fa fa-facebook"></i></i></a></li>
                 <li><a href="https://www.instagram.com/career_adobe/" target="blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/career_adobe/" target="blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/careeradobe/" target="blank"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="https://codepen.io/career_adobe"><i class="fa fa-twitter" target="blank"></i></a></li>
             </ul>
           </div>
@@ -364,6 +360,12 @@
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+    emailjs.init("user_63eomXbtuhnbcV1bmHyXV");
+    })();
+  </script>
 
 </body>
 </html>

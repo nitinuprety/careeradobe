@@ -134,3 +134,22 @@
 
 
 })(window.jQuery);
+
+function sendMail(params) {
+  var tempParams = {
+    from_name: document.getElementById("name").value,
+    to_name: document.getElementById("email").value,
+    category: document.getElementById("category").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs.send('service_ngt3ewb', 'template_qoo0zaq', tempParams)
+  .then(function(res){
+    console.log("Success", res.status);
+  })
+}
+
+// var form = document.getElementById("contact");
+// document.getElementById("form-submit").addEventListener("click", function () {
+//   form.submit();
+// });
